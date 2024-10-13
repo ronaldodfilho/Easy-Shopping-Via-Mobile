@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5D5D7D;
+}
+
+.links {
+    text-decoration: none;
+    font-size: 28px;
+    position: relative;
+    margin: 0 auto;
+    margin-left: 3vw;
+    top: 2.5vh;
+    left: 1vw;
+}
+
+.links:nth-child(2) {
+    opacity: 40%;
+}
+
+.links:nth-child(2):hover {
+    opacity: 100%;
+}
+
+.links:hover {
+    color: #9499EA;
+}
+
+#container-right {
+    position: absolute;
+    right: 0vw;
+    background-color: rgba(93, 93, 125, 0.16);
+    width: 30vw;
+    height: 100vh;
+}
+
+#container-left {
+    position: absolute;
+    left: 7vw;
+    top: 43vh;
+}
+
+h1,
+p {
+    margin-bottom: 2vh;
+}
+
+img {
+    width: 456px;
+    height: 562px;
+    position: relative;
+    top: 20vh;
+    right: 7vw;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+    width: 368px;
+}
+
+p {
+    font-size: 28px;
+    line-height: 48px;
+    width: 545px;
+    opacity: 60%;
+}
+
+button {
+    font-size: 28px;
+    line-height: 48px;
+    width: 270px;
+    height: 62PX;
+    border: none;
+    border-radius: 47px;
+    background-color: #9499EA;
+    color: #FFFFFF;
+    box-shadow: 0px 10px 24px 0px #9499EA19;
+}
+
+button:hover {
+    width: 297px;
+    height: 68PX;
+}
+
+button:active {
+    opacity: 80%;
+}
+
+@media screen and (max-width:1430px) {
+
+    .links {
+        font-size: 25px;
+        left: 1vw;
+        margin-left: 2vw;
+    }
+
+    img {
+        right: 10vw;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    img {
+        right: 12vw;
+    }
+}
+
+@media screen and (max-width:1080px) {
+
+    header{
+        display:none;
+    }
+
+    #container-right {
+        top: 50vh;
+        width: 100%;
+        height: 50%;
+    }
+
+    img {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5vh;
+        width: 374px;
+        height: 444px;
+    }
+
+    #container-left {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 7vh;
+        width: 100%;
+    }
+
+    h1,p,button{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    #container-left {
+        margin-top: 4vh;
+    }
+    
+    h1{
+        font-size: 40px;
+        line-height:52px;
+        width:240px;
+    }
+
+    P{
+        font-size: 18px;
+        width:350px;
+        line-height: 30px;
+    }
+
+    img{
+        width:244px;
+        height:291px;
+        margin-top:4vh;
+    }
+}
